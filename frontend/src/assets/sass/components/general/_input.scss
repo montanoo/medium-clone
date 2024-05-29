@@ -1,0 +1,44 @@
+.input__group {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0em;
+  color: #818181;
+}
+
+.input__label {
+  padding-top: 1rem;
+  color: #818181;
+  display: block;
+  font-family: Lora;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+}
+.input {
+  padding: 0.5rem;
+  font-family: Lora;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+}
+
+input[type='file' i] {
+  background-color: white;
+  border: 1px solid #767676;
+}
+
+.inputError__message {
+  color: red;
+  font-size: 0.8rem;
+  margin: 0;
+}
+
+.absolute {
+  position: absolute;
+  bottom: -25px;
+}
+
+.input-error {
+  border: 1px solid red;
+}

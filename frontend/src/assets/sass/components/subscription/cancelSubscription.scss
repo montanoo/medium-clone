@@ -1,0 +1,56 @@
+.cancelModal__text {
+    font-family: Lora;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #495057;
+}
+
+.cancelModal {
+    width: 100%;
+}
+
+.cancelModal__buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.cancelModal__yes {
+    padding: 0.7rem;
+    margin: 1rem 0;
+    border: 0;
+    background: #495057;
+    color: #FFFFFF;
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        background:  #8f8f8f;
+      }
+}
+
+.cancelModal__no {
+    padding: 0.7rem;
+    margin: 1rem 0;
+    border: 0;
+    background: #D4A373;
+    color: #FFFFFF;
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        background:  #c09771;
+      }
+}

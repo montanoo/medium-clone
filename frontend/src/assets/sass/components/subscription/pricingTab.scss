@@ -1,0 +1,51 @@
+.pricingTab {
+    width: 100%;
+}
+
+.pricingTab__tabs {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.pricingTab__tab {
+    padding: 0.7rem;
+    margin: 1rem 0;
+    border: 0;
+    background: #D9D9D9;
+    color: #818181;
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    text-align: center;
+
+    &:hover {
+        cursor: pointer;
+        background:  #8f8f8f;
+      }
+}
+
+.pricingTab__tabActive {
+    background: #d4a373;
+    color: $white;
+    &:hover {
+        background: #c09771;
+    }
+}
+
+.pricingTab__plan{
+    display: flex;
+    justify-content: space-between;
+    font-family: Lora;
+    font-size: 13px;
+    font-weight: 700;
+    line-height: 25px;
+    letter-spacing: 0em;
+    color: #818181;
+}
+
+.princingTab_price {
+    color:#D4A373;
+    font-size: 16px;
+}

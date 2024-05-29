@@ -1,0 +1,51 @@
+.comment {
+  margin-top: 2rem;
+  background-color: #e7e7e7;
+  border-radius: 21px;
+  padding: 1.5rem 3rem;
+  @include for-phone-only {
+    padding: 1.5rem 1rem;
+  }
+}
+
+.comment__inner {
+  display: flex;
+  gap: 20px;
+}
+
+.comment__name {
+  font-family: Lora;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #343a40;
+}
+
+.comment__timestamps {
+  font-family: Lora;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #858585;
+  display: flex;
+}
+
+.comment__content {
+  font-family: Lora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #495057;
+
+  word-break: break-all;
+}
+
+.userImage__default {
+  border-radius: 50%;
+}

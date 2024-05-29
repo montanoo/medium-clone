@@ -1,0 +1,34 @@
+.createArticleHeader {
+  background: #3e3e3e;
+  height: 100%;
+  padding: 8rem 0rem 5rem;
+}
+
+.articleCreateTitle__Wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3rem;
+  justify-content: center;
+}
+
+.articleCreate__inner {
+  @include container;
+}
+
+.articleCreate__Title-white {
+  color: #fff;
+}
+
+.articleCreate__Title-grey {
+  color: #495057;
+}
+
+.articleCreate__Title {
+  font-family: Lora;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  margin: 0;
+}

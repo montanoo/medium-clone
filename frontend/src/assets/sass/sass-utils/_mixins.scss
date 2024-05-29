@@ -1,0 +1,89 @@
+@mixin categoryTag {
+  background-color: rgba(255, 255, 255, 0.15);
+  border-radius: 8px;
+  text-decoration: none;
+  color: $white;
+  text-transform: uppercase;
+  line-height: 11.72px;
+  font-weight: 700;
+  font-size: 10px;
+  padding: 5px 10px;
+  font-family: Roboto, serif;
+  cursor: pointer;
+  &:hover {
+    background-color: rgba(255, 255, 255, 1);
+    color: $hoverColor;
+    transition: all 0.5s;
+  }
+}
+
+@mixin sectionTitle {
+  margin-top: 4rem;
+  color: #495057;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+@mixin container {
+  max-width: $maxWidth;
+  margin: 0 auto;
+  box-sizing: border-box;
+
+  @include for-desktop-down {
+    padding: 0 1rem;
+  }
+}
+
+@mixin for-phone-only {
+  @media only screen and (max-width: 768px) {
+    @content;
+  }
+}
+
+@mixin for-tablet-down {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-small-screen-down {
+  @media only screen and (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-down {
+  @media only screen and (max-width: 1512px) {
+    @content;
+  }
+}
+
+@mixin for-desktop-up {
+  @media (max-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin for-large-screen-only {
+  @media (min-width: 1512px) {
+    @content;
+  }
+}
+
+@mixin card-grid {
+  display: grid;
+  column-gap: 20px;
+  row-gap: 30px;
+
+  @include for-desktop-down {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  @include for-tablet-down {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @include for-phone-only {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}

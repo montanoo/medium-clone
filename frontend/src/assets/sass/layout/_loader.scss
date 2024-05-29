@@ -1,0 +1,17 @@
+.globalLoader {
+  width: 100%;
+  height: 100vh;
+  background-color: black;
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  z-index: 10;
+}
+
+.globalLoader__inner {
+  padding: 1.5rem;
+  border-radius: 15px;
+  background: #d4a373;
+}

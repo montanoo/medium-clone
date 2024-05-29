@@ -1,0 +1,119 @@
+.articleBlocker {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+  user-select: none;
+}
+
+.articleBlocker__Inner {
+  max-width: 450px;
+  position: relative;
+  border: 1px solid #495057;
+}
+
+.articleBlocker__Badge {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -120%);
+  padding: 10px;
+  z-index: 2;
+}
+
+.blockerBadge {
+  border-radius: 50%;
+  background: #d4a373;
+  height: 25px;
+  width: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.blockerBadge__White {
+  color: white;
+  z-index: 3;
+}
+
+.articleBlocker__Title {
+  font-family: Lora;
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #495057;
+  padding: 5px 15px;
+  background-color: white;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  @include for-phone-only {
+    padding: 3px 15px;
+    font-size: 14px;
+  }
+}
+
+.articleBlocker__Paragraph {
+  margin: 0;
+  padding: 0;
+
+  @include for-phone-only {
+    font-size: 12px;
+  }
+}
+
+.articleBlocker__Text {
+  font-family: Lora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #495057;
+  padding: 20px 30px 40px;
+}
+
+.articleBlocker__Controls {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.blockerControls__inner {
+  display: flex;
+  gap: 30px;
+}
+
+@mixin button {
+  color: white;
+  width: 126px;
+  height: 37px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #495057;
+  font-family: Lora;
+  font-size: 12px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+
+  &:hover {
+    cursor: pointer;
+    transition: all 0.7s ease-in-out;
+    filter: brightness(90%);
+  }
+
+  @include for-phone-only {
+    font-size: 12px;
+    width: 100px;
+  }
+}
+
+.blockerControls__button {
+  @include button;
+}
+
+.blockerControls__button-logIn {
+  background: #d4a373;
+}

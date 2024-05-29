@@ -1,0 +1,50 @@
+.header {
+  display: flex;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.2);
+  position: fixed;
+  width: 100%;
+  height: 80px;
+  z-index: 2;
+
+  font-family: Roboto, serif;
+}
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @include container;
+  width: 100%;
+}
+.header__title {
+  color: $primaryColor;
+  font-size: 1.25rem;
+  font-family: Spartan;
+  font-weight: 700;
+}
+.header__nav-list {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+
+  @include for-phone-only {
+    gap: 15px;
+  }
+}
+
+.header__nav-item-link {
+  color: $primaryColor;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 5px 0;
+  text-decoration: none;
+  &:hover {
+    transition: 1s ease-in;
+    border-bottom: 0px;
+    border-bottom: 1px solid $hoverColor;
+  }
+
+  @include for-phone-only {
+    font-size: 0.8rem;
+  }
+}

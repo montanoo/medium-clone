@@ -1,0 +1,23 @@
+.addArticle {
+  @include editorsPickCard__base;
+  background-color: #ffffff;
+  text-decoration: none;
+}
+
+.addArticle__Inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.addArticle__Text {
+  font-family: Lora;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #495057;
+}

@@ -1,0 +1,13 @@
+.subscriptionForm__divider {
+    display: grid;
+    grid-template-columns: 40% 30% 30%;
+    box-sizing: border-box;
+}
+
+.subscriptionForm__divider-item {
+    padding-right: 10px;
+}
+
+.subscriptionForm__divider-item:last-child {
+    padding-right: 0px;
+}

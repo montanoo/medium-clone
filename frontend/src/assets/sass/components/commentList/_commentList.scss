@@ -1,0 +1,83 @@
+.commentsList {
+  font-family: Lora;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #495057;
+}
+
+.commentList__form {
+  display: flex;
+  padding: 1.5rem 3rem;
+
+  @include for-phone-only {
+    padding: 1.5rem 1rem;
+  }
+  border-radius: 21px;
+  background-color: #e7e7e7;
+  gap: 20px;
+}
+
+.commentList__error {
+  color: red;
+  font-size: 0.7rem;
+  position: absolute;
+  padding-left: 1rem;
+}
+
+.commentList__image {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+
+  @include for-phone-only {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+.commentsListForm__wrapper {
+  width: 100%;
+  position: relative;
+  border-radius: 21px;
+  background-color: $white;
+}
+
+.commentList__buttonWrapper {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-radius: 21px;
+}
+
+.commentsList__input {
+  resize: vertical;
+  min-height: 3rem;
+  padding-left: 20px;
+  border-radius: 21px;
+  border-width: 1px;
+  padding-top: 10px;
+  outline: none;
+  font-family: 'Lora';
+}
+
+.commentsList__button {
+  cursor: pointer;
+  position: absolute;
+  bottom: 6px;
+  right: 10px;
+  background-color: #d4a373;
+  z-index: 2;
+  border: 0;
+  border-radius: 21px;
+  font-family: Lora;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 25px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: $white;
+  padding: 7px 20px;
+}

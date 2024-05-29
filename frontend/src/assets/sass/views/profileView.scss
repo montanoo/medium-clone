@@ -1,0 +1,22 @@
+.profileView__Articles {
+  background-color: #f8f9fa;
+}
+
+.profileArticles__inner {
+  padding: 3rem 0;
+  @include container;
+}
+
+.profileArticles__Title {
+  font-family: Lora;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: left;
+  color: #495057;
+}
+.profileArticles__Layout {
+  grid-template-columns: repeat(3, 1fr);
+  @include card-grid;
+}

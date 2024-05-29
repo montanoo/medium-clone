@@ -1,0 +1,165 @@
+.articleCreate__Form {
+  padding: 3rem 0;
+}
+
+.articleForm__inner {
+  @include container;
+  max-width: 1000px;
+}
+
+.articleForm__layout {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding-top: 1rem;
+  gap: 5rem;
+
+  @include for-phone-only {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+}
+
+.articleForm__Column {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.articleForm__premium {
+    padding-top: 1rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.articleForm__checkbox{
+    margin: 0;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #000;
+    background-color: white;
+    &:checked {
+        background-color: $hoverColor;
+    }
+}
+
+.articleForm__checkbox-label{
+    margin-left: 10px;
+    color: #818181;
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 25px;
+}
+
+.textarea__Default {
+  resize: vertical;
+}
+
+.ql-snow {
+  background-color: white;
+  border: 1px solid #767676 !important;
+}
+
+.inputContent__error {
+  .ql-snow {
+    background-color: white;
+    border: 1px solid red !important;
+  }
+  .ql-container {
+    border-top: 0 !important;
+  }
+}
+
+.ql-editor,
+.ql-editor > p {
+  word-break: break-word;
+  font-family: Lora;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+}
+.ql-container {
+  min-height: 100px;
+  height: auto !important;
+  border-top: 0 !important;
+}
+
+.tagSelector__multiselect {
+  .multiselect__tags {
+    padding: 0.5rem;
+    font-family: Lora;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    border: 1px solid #767676;
+    border-radius: 0px;
+
+    .multiselect__placeholder,
+    .multiselect__input {
+      margin: 0;
+      padding: 0;
+    }
+
+    .multiselect__input {
+      font-size: 12px;
+      font-weight: 500;
+      line-height: 25px;
+    }
+    .multiselect__tag {
+      padding: 0.5rem 1.2rem;
+      margin: 0;
+      margin-left: 5px;
+      overflow: inherit;
+      background-color: #d4a373;
+      color: white;
+    }
+  }
+  .multiselect__element,
+  .multiselect__content,
+  .multiselect__content-wrapper {
+    background-color: #d4a373;
+    color: white;
+  }
+
+  .multiselect__option {
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 25px;
+    padding: 0.5rem;
+  }
+}
+
+.articleForm__upload {
+  cursor: pointer;
+  border: 1px solid #767676;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.articleUpload__text {
+  margin: 0;
+  padding: 0;
+  padding: 0.5rem;
+  font-family: Lora;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 25px;
+  color: #a9a9a9;
+}
+
+.articleCover__preview {
+  max-height: 400px;
+  width: 100%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.articleUpload__icon {
+  line-height: 0;
+}

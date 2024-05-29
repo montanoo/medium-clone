@@ -1,0 +1,28 @@
+.manageSubscription {
+  background: #f8f9fa;
+}
+
+.manageSubscription__Edit {
+  padding: 2rem 0;
+}
+
+.manageSubscription__inner {
+  padding: 7rem 0;
+  max-width: 530px;
+  margin: 0 auto;
+  text-align: center;
+
+  @include for-desktop-down {
+    padding: 3rem 1rem;
+  }
+}
+
+.manageSubscription__title {
+  font-family: Lora;
+  font-size: 36px;
+  font-weight: 700;
+  line-height: 46px;
+  letter-spacing: 0em;
+  text-align: center;
+  color: #495057;
+}

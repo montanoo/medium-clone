@@ -1,0 +1,58 @@
+.mainPremium {
+    background: #3e3e3e;
+    color: white;
+    padding-bottom: 2rem;
+  }
+
+.mainPremium__inner {
+    padding-top: 9rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 2rem;
+}
+
+.mainPremium__iconCircle {
+    max-width: 106px;
+    max-height: 106px;
+    padding: 15px;
+    background: #495057;
+    border-radius: 50%;
+    box-shadow: 0px 8px 4px 0px #0000002E;
+    @include for-phone-only {
+        max-width: 75px;
+        max-height: 75px;
+        padding: 10px;
+    }
+}
+
+.mainPremium__iconDiamond {
+    max-width: 106px;
+    max-height: 106px;
+
+    @include for-phone-only {
+        max-width: 75px;
+        max-height: 75px;
+    }
+}
+
+.mainPremium__title{
+    font-family: Lora;
+    font-size: 36px;
+    font-weight: 700;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-align: center;
+}
+
+.mainPremium__content{
+    color: #E5E5E5;
+    text-align: center;
+    font-family: Lora;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+    max-width: 400px;
+}
